@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 75vw;
+    min-height: 90vh;
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: lightcoral;
+    color: black;
+}
+
+.site-header ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.site-header ul li {
+    padding: 0 1em;
+}
+
+.site-main p {
+    color: brown;
+}
+
+footer p {
+    background-color: lightcoral;
+    color: black;
+    text-align: center;
+}
