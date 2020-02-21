@@ -6,9 +6,11 @@ permalink: /home/
 
 <p>Home Page</p>
 <ul>
-    {% for post in site.posts %}
+    {% for page in site.pages %}
+      {% if page.title %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ page.url }}">{{ page.title }}</a>
       </li>
+      {% endif %}
     {% endfor %}
   </ul>
